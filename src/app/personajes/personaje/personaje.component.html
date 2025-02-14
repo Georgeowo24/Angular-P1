@@ -1,0 +1,19 @@
+<h1>{{ nombre }}</h1>
+
+<dl>
+    <td>Nombre:</td>
+    <dd>{{ nombre }}</dd>
+
+    <td>Edad:</td>
+    <dd>{{ edad }}</dd>
+
+    <td>Metodo:</td>
+    <dd>{{ getConcatenar() }}</dd>
+
+    <td>Operación:</td>
+    <dd>{{ mensaje }}</dd>
+</dl>
+
+<button *ngIf = "nombre !== 'El Venoso'" (click)="cambiarNombre()" class="btn btn-primary mx-2">Cambiar nombre</button>
+<button *ngIf = "edad !== 22" (click)="cambiarEdad()" class="btn btn-primary mx-2">Cambiar edad</button>
+<button (click)="resetear()" class="btn btn-primary mx-2">Resetear botones</button>
