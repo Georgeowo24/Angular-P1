@@ -1,3 +1,20 @@
 <h4>Agregar Caricatura</h4>
+<form class="row" (ngSubmit)="enviarCharacters()" >
+    <input type="text"
+        [(ngModel)]="character.name"
+        name="nombre"
+        class="form-control mb-3"
+        placeholder="Nombre"> <!--FormsModule agregarla "Import" en personaje1.module.ts-->
 
-<form class="row" (ngSubmit = "enviarCharacters") action=""></form>
+        <input type="number"
+        name="tiempo"
+        [(ngModel)]="character.tiempo"
+        class="form-control mb-3"
+        placeholder="Año">
+
+    <button type="submit" class="btn btn-primary">
+    Agregar
+    </button>
+
+    <pre>{{character | json}}</pre>
+</form>

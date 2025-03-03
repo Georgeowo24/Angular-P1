@@ -1,0 +1,12 @@
+<h1>Personaje 1</h1>
+
+<div class="row">
+    <div class="col">
+        <app-personaje-list [characterList]="characterV" (OnDelete)="onDeleteCharacter($event)">
+        </app-personaje-list>
+    </div>
+    <div class="col">
+        <app-per1-add-character (onNuevoCharacter)="onNewCharacter($event)">
+        </app-per1-add-character>
+    </div>
+</div>

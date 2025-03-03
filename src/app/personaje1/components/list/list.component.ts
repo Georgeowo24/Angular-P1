@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output, input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Icharacter } from '../../interface/character.interface';
 
 @Component ({
@@ -11,7 +11,8 @@ export class ListComponent {
     @Input()
     public characterList: Icharacter[] = [{
         name: 'George',
-        tiempo: 2004
+        tiempo: 2004,
+        poder: 'Si'
     }]
 
     @Output()

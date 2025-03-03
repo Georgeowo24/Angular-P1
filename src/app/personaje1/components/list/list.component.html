@@ -1,7 +1,7 @@
 <h4>Listados</h4>
 
 <ul class="list-group">
-    <li *ngFor="let caracterV of caracterList;
+    <li *ngFor="let characterV of characterList;
         let i=index;
         let primero=first;
         let ultimo=last;
@@ -14,9 +14,9 @@
 
     <div>
         <span class="text-primary"> {{i}}. </span>
-        <span>{{caracterV.name}}</span>
+        <span>{{characterV.name}}</span>
         <strong> / Fecha de inicio: </strong>
-        <span>{{caracterV.tiempo}}</span>
+        <span>{{characterV.tiempo}}</span>
 
         <!--<span> Es el primero:{{i===0}}</span> apunta al primer indice -->
         <span> Es el primero:{{primero}}</span>
@@ -30,7 +30,7 @@
         -->
     </div>
 
-    <button (click)="onDeleteCaracterH(caracterV.id)" class="btn btn-danger"> X</button>
+    <button (click)="onDeleteCharacterH(characterV.id)" class="btn btn-danger"> X</button>
 
     </li>
 </ul>

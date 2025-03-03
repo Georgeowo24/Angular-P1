@@ -7,13 +7,15 @@ import { Icharacter } from "../../interface/character.interface";
     templateUrl: './add-character.component.html',
     styleUrl: './add-character.component.css'
 })
+
 export class AddCharacterComponent {
     @Output()
     public onNuevoCharacter: EventEmitter <Icharacter> = new EventEmitter();
 
     public character: Icharacter = {
         name: "",
-        tiempo: 0
+        tiempo: 0,
+        poder: 'Non'
     }
 
     enviarCharacters(): void {
@@ -24,7 +26,7 @@ export class AddCharacterComponent {
         this.character.name = '';
         this.character.tiempo = 0;
 
-        this.character = {name: '', tiempo: 0}
+        this.character = {name: '', tiempo: 0, poder: 'Va'}
 
     }
 }
