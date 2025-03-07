@@ -15,7 +15,7 @@ export class AddCharacterComponent {
     public character: Icharacter = {
         name: "",
         tiempo: 0,
-        poder: 'Non'
+        debilidad: 'Afecto femenino'
     }
 
     enviarCharacters(): void {
@@ -26,7 +26,7 @@ export class AddCharacterComponent {
         this.character.name = '';
         this.character.tiempo = 0;
 
-        this.character = {name: '', tiempo: 0, poder: 'Va'}
+        this.character = {name: '', tiempo: 0, debilidad: 'Oscuridad'}
 
     }
 }

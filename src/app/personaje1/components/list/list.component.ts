@@ -12,7 +12,7 @@ export class ListComponent {
     public characterList: Icharacter[] = [{
         name: 'George',
         tiempo: 2004,
-        poder: 'Si'
+        debilidad: 'Si',
     }]
 
     @Output()

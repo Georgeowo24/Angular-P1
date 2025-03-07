@@ -11,17 +11,17 @@ export class PersonajeService {
         id: v4(),
         name: 'JTR',
         tiempo: 2004,
-        poder: 'Electricidad'
+        debilidad: 'Electricidad'
     }, {
         id: v4(),
         name: 'Cri Cri',
         tiempo: 2004,
-        poder: 'Hielo'
+        debilidad: 'Hielo'
     }, {
         id: v4(),
         name: 'Urabes',
         tiempo: 2004,
-        poder: 'Fuego'
+        debilidad: 'Fuego'
     }
 ];
 
